@@ -223,7 +223,7 @@
   }
   /* Navbar
       ============================= */
-  
+
   .nav {
     margin: 0;
     padding: 0;
@@ -231,7 +231,8 @@
     text-align: center;
     display: none;
   }
-  
+
+
   .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -271,8 +272,9 @@
   }
 
   @media (max-width: 767px) {
-    .navbar-menu .nav{
+    .navbar-menu {
         display: none;
+        flex: 1;
     }
     :root {
         --nav-item-margin: 0;
@@ -295,13 +297,44 @@
     align-items: center;
   }
 
-  .nav{
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
+  .menu-icon{
+    cursor: pointer;
+    padding: 2.5rem;
+    position: relative;
+    user-select: none;
   }
-  
+
+  .navicon {
+    background: var(--color-white);
+    display: block;
+    width: 2rem;
+    height: .2rem;
+    position: relative;
+    transition: background .2s ease-out;
+  }
+
+  .navicon::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-white);
+    transition: all .2s ease-out;
+    top: .7rem;
+  }
+
+  .navicon::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-white);
+    transition: all .2s ease-out;
+    top: -.7rem;
+  }
+
   /* Footer
       ============================= */
   
@@ -883,4 +916,3 @@
     cursor: text;
     margin: 0 1rem;
   }
-    

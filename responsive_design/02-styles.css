@@ -488,11 +488,10 @@
   .card-work:hover .card-title {
     opacity: 1;
   }
-  
   /* Card SERVICES
-      ============================= */
-  
-  .card-services .card-title {
+  ============================= */
+
+.card-services .card-title {
     margin: 0;
   }
   
@@ -501,7 +500,6 @@
     padding: 2rem;
     background-color: var(--color-light-grey);
   }
-  
   .card-services a:hover {
     color: var(--color-white);
     background: var(--color-primary);
@@ -859,4 +857,3 @@
     cursor: text;
     margin: 0 1rem;
   }
-    
